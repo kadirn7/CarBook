@@ -34,7 +34,7 @@ namespace CarBook.Persistence.Repositories
             return await _context.Set<T>().FindAsync(id);
         }
 
-        public async Task Remove(T Entity)
+        public async Task RemoveAsync(T Entity)
         {
             _context.Set<T>().Remove(Entity);
             await _context.SaveChangesAsync();
