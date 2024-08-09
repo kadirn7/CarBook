@@ -1,10 +1,7 @@
-﻿using CarBook.Application.Features.CQRS.Commands.AboutCommands;
+﻿
 using CarBook.Application.Features.CQRS.Commands.BannerCommands;
-using CarBook.Application.Features.CQRS.Handlers.AboutHandlers;
 using CarBook.Application.Features.CQRS.Handlers.BannerHandlers;
-using CarBook.Application.Features.CQRS.Queries.AboutQueries;
 using CarBook.Application.Features.CQRS.Queries.BannerQueries;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CarBook.WebApi.Controllers
@@ -46,12 +43,12 @@ namespace CarBook.WebApi.Controllers
         public async Task<IActionResult> CreateBanner(CreateBannerCommand command)
         {
             await _createBannerCommandHandler.Handle(command);
-            return Ok(" Hakkımda bilgisi Eklendi");
+            return Ok(" Banner bilgisi Eklendi");
         }
         [HttpDelete]
         public async Task<IActionResult> RemoveBanner(int id)
         {
-            await _getBannerByIdQueryHandler.Handle(new GetBannerByIdQuery(id));
+            await _removeBannerCommandHandler.Handle(new RemoveBannerCommand(id));
             return Ok();
         }
         [HttpPut]
