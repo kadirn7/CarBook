@@ -8,7 +8,7 @@ namespace CarBook.WebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class AboutsContoller : ControllerBase
+    public class AboutsController : ControllerBase
     {
         private readonly CreateAboutCommandHandler _createAboutCommandHandler;
         private readonly GetAboutByIdQueryHandler _getAboutByIdQueryHandler;
@@ -16,7 +16,7 @@ namespace CarBook.WebApi.Controllers
         private readonly UpdateAboutCommandHandler _updateAboutCommandHandler;
         private readonly RemoveAboutCommandHandler _removeAboutCommandHandler;
 
-        public AboutsContoller(CreateAboutCommandHandler createAboutCommandHandler, GetAboutByIdQueryHandler getAboutByIdQueryHandler,
+        public AboutsController(CreateAboutCommandHandler createAboutCommandHandler, GetAboutByIdQueryHandler getAboutByIdQueryHandler,
             GetAboutQueryHandler getAboutQueryHandler, UpdateAboutCommandHandler updateAboutCommandHandler,
             RemoveAboutCommandHandler removeAboutCommandHandler)
         {
