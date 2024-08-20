@@ -19,7 +19,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarBook.Application", "CarB
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Frontend", "Frontend", "{5886403C-9E2E-4142-A912-C182A8615E50}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarBook.Web.UI", "Frontend\CarBook.Web.UI\CarBook.Web.UI.csproj", "{30A0A44A-0CA5-43F1-98FC-00165080856C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarBook.Web.UI", "Frontend\CarBook.Web.UI\CarBook.Web.UI.csproj", "{30A0A44A-0CA5-43F1-98FC-00165080856C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
