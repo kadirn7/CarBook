@@ -3,10 +3,10 @@
 Bu projede kullanılan başlıca teknolojiler ve araçlar şunlardır:
 
 
--
-- - **ASP.NET Core Web API**: RESTful servisler geliştirmek için kullanılan framework.
-- - **Onion Architecture**: Uygulama bağımlılıklarını merkeze doğru yönlendiren, iş kurallarını merkeze alarak dış katmanlarla bağlantıyı en aza indiren, esnek ve test edilebilir bir mimari model.
-- - **ASP.NET Core MVC**: Web uygulamaları için kullanılan framework.
+
+-  **ASP.NET Core Web API**: RESTful servisler geliştirmek için kullanılan framework.
+-  **Onion Architecture**: Uygulama bağımlılıklarını merkeze doğru yönlendiren, iş kurallarını merkeze alarak dış katmanlarla bağlantıyı en aza indiren, esnek ve test edilebilir bir mimari model.
+-  **ASP.NET Core MVC**: Web uygulamaları için kullanılan framework.
 - **Entity Framework Core**: Veritabanı işlemleri için kullanılan ORM (Object-Relational Mapping) aracı.
 - **SQL Server**: Veritabanı yönetim sistemi.
 - **JavaScript**: Dinamik içerik ve kullanıcı etkileşimleri için kullanılan programlama dili.
